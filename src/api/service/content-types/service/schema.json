@@ -29,6 +29,12 @@
         "videos",
         "audios"
       ]
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "services"
     }
   }
 }

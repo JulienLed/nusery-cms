@@ -32,6 +32,12 @@
     },
     "Slug": {
       "type": "string"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "projets"
     }
   }
 }

@@ -27,10 +27,29 @@
         "audios"
       ]
     },
-    "content": {
+    "members": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::content.content"
+      "relation": "oneToMany",
+      "target": "api::member.member",
+      "mappedBy": "menu"
+    },
+    "projets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::projet.projet",
+      "mappedBy": "menu"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "menu"
+    },
+    "tarifs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tarif.tarif",
+      "mappedBy": "menu"
     }
   }
 }
