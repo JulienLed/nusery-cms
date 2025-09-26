@@ -1,20 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "menus",
+  "collectionName": "members",
   "info": {
-    "singularName": "menu",
-    "pluralName": "menus",
-    "displayName": "Menu"
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Titre": {
+    "Name": {
       "type": "string"
     },
-    "Path": {
+    "Role": {
       "type": "string"
     },
     "Image": {
@@ -27,10 +27,11 @@
         "audios"
       ]
     },
-    "content": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::content.content"
+    "Description": {
+      "type": "text"
+    },
+    "FunFact": {
+      "type": "string"
     }
   }
 }
