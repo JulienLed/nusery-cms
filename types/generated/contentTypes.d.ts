@@ -529,7 +529,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.String;
+    Description: Schema.Attribute.Text;
     Image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
